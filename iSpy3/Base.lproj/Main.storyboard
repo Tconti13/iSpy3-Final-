@@ -103,6 +103,7 @@
                         <outlet property="backgroundLevel01" destination="C09-GS-lUt" id="UyT-KP-Gb3"/>
                         <outlet property="deerLevel01" destination="RGE-gQ-VzT" id="IEy-bM-cI3"/>
                         <outlet property="duckLevel01" destination="PWw-fd-wQm" id="vLa-Qt-Z4V"/>
+                        <outlet property="octopusLevel01" destination="Cw9-Vm-SOu" id="dR9-Q0-3bL"/>
                         <outlet property="seagullLevel01" destination="5EO-Xi-2nW" id="WUG-y2-uKB"/>
                     </connections>
                 </viewController>

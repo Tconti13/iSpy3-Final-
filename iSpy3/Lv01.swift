@@ -20,6 +20,8 @@ class Lv01: UIViewController {
     @IBOutlet weak var deerLevel01: UILabel!
     @IBOutlet weak var seagullLevel01: UILabel!
     @IBOutlet weak var duckLevel01: UILabel!
+    @IBOutlet weak var octopusLevel01: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
