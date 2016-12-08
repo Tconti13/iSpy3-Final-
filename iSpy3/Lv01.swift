@@ -18,6 +18,7 @@ class Lv01: UIViewController {
     
     //The item List (Deer, Duck, Seagull, Chicken, Padlock, Octopus)
     @IBOutlet weak var deerLevel01: UILabel!
+    @IBOutlet weak var seagullLevel01: UILabel!
     @IBOutlet weak var duckLevel01: UILabel!
 
     override func viewDidLoad() {
