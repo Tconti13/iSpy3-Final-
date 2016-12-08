@@ -9,8 +9,14 @@
 import UIKit
 
 class Lv01: UIViewController {
-    //The item List (Deer, Duck, Seagull, Chicken, Padlock, Octopus)
     
+    //View & Background
+    @IBOutlet weak var backgroundLevel01: UIImageView!
+    
+    
+    
+    
+    //The item List (Deer, Duck, Seagull, Chicken, Padlock, Octopus)
     @IBOutlet weak var deerLevel01: UILabel!
     @IBOutlet weak var duckLevel01: UILabel!
 
