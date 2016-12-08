@@ -12,6 +12,7 @@ class Lv01: UIViewController {
     
     //View & Background
     @IBOutlet weak var backgroundLevel01: UIImageView!
+    @IBOutlet weak var viewLevel01: UIView!
     
     
     
