@@ -30,6 +30,9 @@ class Lv01: UIViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func onLevel01Tapped(_ sender: UITapGestureRecognizer) {
+        print("success") 
+    }
     
     
     
