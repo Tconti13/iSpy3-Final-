@@ -9,12 +9,12 @@
 import UIKit
 
 class Lv01: UIViewController {
+    @IBOutlet weak var deerLevel01: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    @IBOutlet weak var listDeer01: UILabel!
     
     
     
