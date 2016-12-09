@@ -58,6 +58,13 @@
                                         <rect key="frame" x="0.0" y="-64" width="375" height="575"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNv-iz-UeD" customClass="Level01SpyLabels" customModule="iSpy3" customModuleProvider="target">
+                                        <rect key="frame" x="264" y="400" width="48" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -118,6 +125,7 @@
                         <outlet property="octopusLevel01" destination="Cw9-Vm-SOu" id="dR9-Q0-3bL"/>
                         <outlet property="padLockLevel01" destination="kK8-sw-hUU" id="fnT-fd-JX3"/>
                         <outlet property="seagullLevel01" destination="5EO-Xi-2nW" id="WUG-y2-uKB"/>
+                        <outlet property="spyDeer01" destination="LNv-iz-UeD" id="bJL-PZ-G58"/>
                         <outlet property="viewLevel01" destination="XBa-zu-0VT" id="UWL-xt-Dpp"/>
                     </connections>
                 </viewController>

@@ -25,6 +25,7 @@ class Lv01: UIViewController {
     @IBOutlet weak var padLockLevel01: UILabel!
     @IBOutlet weak var chickenLevel01: UILabel!
     //The Hidden Objects(Deer, Duck, Seagull, Chicken, Padlock, Octopus)
+    @IBOutlet weak var spyDeer01: Level01SpyLabels!
 
     
     
