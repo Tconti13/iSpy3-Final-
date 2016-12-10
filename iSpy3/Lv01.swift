@@ -15,12 +15,16 @@ class Lv01: UIViewController {
     @IBOutlet weak var viewLevel01: UIView!
     
     //The Item List(Deer, Duck, Seagull, Chicken, Padlock, Octopus)
-    @IBOutlet weak var deerLevel01: UILabel!
-    @IBOutlet weak var seagullLevel01: UILabel!
-    @IBOutlet weak var duckLevel01: UILabel!
-    @IBOutlet weak var octopusLevel01: UILabel!
-    @IBOutlet weak var padLockLevel01: UILabel!
-    @IBOutlet weak var chickenLevel01: UILabel!
+    @IBOutlet weak var listDeer01: Level01ListLabels!
+    @IBOutlet weak var listSeaGull01: Level01ListLabels!
+    @IBOutlet weak var listDuck01: Level01ListLabels!
+    @IBOutlet weak var listOctopus01: Level01ListLabels!
+    @IBOutlet weak var listPadLock: Level01ListLabels!
+    @IBOutlet weak var listChicken01: Level01ListLabels!
+    //The Array that houses the List Labels
+    var listArray01 = [Level01ListLabels]()
+    
+    
     //The Hidden Objects(Deer, Duck, Seagull, Chicken, Padlock, Octopus)
     @IBOutlet weak var spyDeer01: Level01SpyLabels!
     @IBOutlet weak var spySeagull01: Level01SpyLabels!
@@ -28,6 +32,7 @@ class Lv01: UIViewController {
     @IBOutlet weak var spyOctopus01: Level01SpyLabels!
     @IBOutlet weak var spyPadLock01: Level01SpyLabels!
     @IBOutlet weak var spyChicken01: Level01SpyLabels!
+    //The Array that houses the Object Labels
     var spyArray = [Level01SpyLabels]()
     
     
