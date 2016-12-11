@@ -9,7 +9,7 @@
 import UIKit
 
 class Level01ListLabels: UILabel {
-var listTap = true
+
 
     
     
