@@ -28,38 +28,68 @@ class Lv01: UIViewController {
     @IBOutlet weak var spyOctopus01: Level01SpyLabels!
     @IBOutlet weak var spyPadLock01: Level01SpyLabels!
     @IBOutlet weak var spyChicken01: Level01SpyLabels!
-    var spyArray = [Level01SpyLabels]()
+    var spyArray01 = [Level01SpyLabels]()
     var remaining01 = 6
     var clickable01 = true
     var notClickable01 = false
+    var gameOver = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        spyArray.append(spyDeer01)
-        spyArray.append(spySeagull01)
-        spyArray.append(spyDuck01)
-        spyArray.append(spyOctopus01)
-        spyArray.append(spyPadLock01)
-        spyArray.append(spyChicken01)
+        spyArray01.append(spyDeer01)
+        spyArray01.append(spySeagull01)
+        spyArray01.append(spyDuck01)
+        spyArray01.append(spyOctopus01)
+        spyArray01.append(spyPadLock01)
+        spyArray01.append(spyChicken01)
         itemsLeft01.text = "There is 6 object(s) remaining!"
+    }
+        func checkForWinner(){
+            if remaining01 == 0{
+            displayWinningMessage(message: "You've found them all!")
+            resetGame()
+            }
+        }
+                    func resetGame(){
+                        for item in spyArray01{
+                            item.canTap = true
+                            clickable01 = true
+                            gameOver = false
+                            remaining01 = 6
+                        }
+                    }
+                    func displayWinningMessage(message: String){
+                        self.itemsLeft01.text = "Game Over"
+                        let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+                        let alertAction = UIAlertAction(title: "Reset", style: .default) {
+                            (action) -> Void in self.resetGame()
+                            self.itemsLeft01.text = "There is 6 object(s) remaining!"
+                        }
+    alert.addAction(alertAction)
+    present(alert, animated: true, completion: nil)
+    gameOver = true
     }
     @IBAction func onLevel01Tapped(_ sender: UITapGestureRecognizer) {
         print("success")
-        for item in spyArray{
+        if gameOver{
+        return
+        }
+        var canPlay = false
+        for item in spyArray01{
             if item.frame.contains(sender.location(in: backgroundLevel01 )){
                 if item.canTap {
                     if(clickable01){
-                    item.backgroundColor = UIColor.green
                     remaining01 -= 1
                     itemsLeft01.text = "There is \(remaining01) object(s) remaining!"
+                        checkForWinner()
                     }
                 //clickable01 = !clickable01
                     item.canTap = false
-                    
-                
+                    //displayWinningMessage()
+                }
+                if item.canTap{
+                    canPlay = true
                 }
                 }
-                    //when you want to add a scoreboard. Each point will be deducted if canTap equals false. Accomadate for that
-
 }
 }
 }
