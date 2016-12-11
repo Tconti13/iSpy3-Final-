@@ -33,6 +33,7 @@ class Lv01: UIViewController {
     var clickable01 = true
     var notClickable01 = false
     var gameOver = false
+    var canPlay = false
     override func viewDidLoad() {
         super.viewDidLoad()
         spyArray01.append(spyDeer01)
@@ -43,53 +44,50 @@ class Lv01: UIViewController {
         spyArray01.append(spyChicken01)
         itemsLeft01.text = "There is 6 object(s) remaining!"
     }
-        func checkForWinner(){
-            if remaining01 == 0{
+    func checkForWinner(){
+        if remaining01 == 0{
             displayWinningMessage(message: "You've found them all!")
             resetGame()
-            }
         }
-                    func resetGame(){
-                        for item in spyArray01{
-                            item.canTap = true
-                            clickable01 = true
-                            gameOver = false
-                            remaining01 = 6
-                        }
-                    }
-                    func displayWinningMessage(message: String){
-                        self.itemsLeft01.text = "Game Over"
-                        let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-                        let alertAction = UIAlertAction(title: "Reset", style: .default) {
-                            (action) -> Void in self.resetGame()
-                            self.itemsLeft01.text = "There is 6 object(s) remaining!"
-                        }
-    alert.addAction(alertAction)
-    present(alert, animated: true, completion: nil)
-    gameOver = true
+    }
+    func resetGame(){
+        for item in spyArray01{
+            item.canTap = true
+            clickable01 = true
+            gameOver = false
+            remaining01 = 6
+        }
+    }
+    func displayWinningMessage(message: String){
+        self.itemsLeft01.text = "Game Over"
+        let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Reset", style: .default) {
+            (action) -> Void in self.resetGame()
+            self.itemsLeft01.text = "There is 6 object(s) remaining!"
+        }
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
+        gameOver = true
     }
     @IBAction func onLevel01Tapped(_ sender: UITapGestureRecognizer) {
         print("success")
         if gameOver{
-        return
+            return
         }
-        var canPlay = false
         for item in spyArray01{
             if item.frame.contains(sender.location(in: backgroundLevel01 )){
                 if item.canTap {
                     if(clickable01){
-                    remaining01 -= 1
-                    itemsLeft01.text = "There is \(remaining01) object(s) remaining!"
+                        remaining01 -= 1
+                        itemsLeft01.text = "There is \(remaining01) object(s) remaining!"
                         checkForWinner()
                     }
-                //clickable01 = !clickable01
                     item.canTap = false
-                    //displayWinningMessage()
                 }
                 if item.canTap{
                     canPlay = true
                 }
-                }
-}
-}
+            }
+        }
+    }
 }

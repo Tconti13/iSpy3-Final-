@@ -7,17 +7,6 @@
 //
 
 import UIKit
-
-
-
-
-
-
 class Level01SpyLabels: UILabel {
     var canTap = true
-
-
-    
-    
-    
 }

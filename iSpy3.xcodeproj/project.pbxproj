@@ -14,6 +14,8 @@
 		3FA02E0A1DF9DA050012ACA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA02E081DF9DA050012ACA0 /* LaunchScreen.storyboard */; };
 		3FA02E121DF9DA9C0012ACA0 /* Lv01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E111DF9DA9C0012ACA0 /* Lv01.swift */; };
 		3FA02E141DFA4F380012ACA0 /* Level01SpyLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E131DFA4F370012ACA0 /* Level01SpyLabels.swift */; };
+		3FA02E1E1DFCE32B0012ACA0 /* Lv02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E1D1DFCE32B0012ACA0 /* Lv02.swift */; };
+		3FA02E201DFCE6460012ACA0 /* Level02SpyLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E1F1DFCE6460012ACA0 /* Level02SpyLabels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3FA02E0B1DF9DA050012ACA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA02E111DF9DA9C0012ACA0 /* Lv01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lv01.swift; sourceTree = "<group>"; };
 		3FA02E131DFA4F370012ACA0 /* Level01SpyLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level01SpyLabels.swift; sourceTree = "<group>"; };
+		3FA02E1D1DFCE32B0012ACA0 /* Lv02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lv02.swift; sourceTree = "<group>"; };
+		3FA02E1F1DFCE6460012ACA0 /* Level02SpyLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level02SpyLabels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 			children = (
 				3FA02DFF1DF9DA050012ACA0 /* AppDelegate.swift */,
 				3FA02E011DF9DA050012ACA0 /* ViewController.swift */,
-				3FA02E031DF9DA050012ACA0 /* Main.storyboard */,
 				3FA02E111DF9DA9C0012ACA0 /* Lv01.swift */,
 				3FA02E131DFA4F370012ACA0 /* Level01SpyLabels.swift */,
+				3FA02E1F1DFCE6460012ACA0 /* Level02SpyLabels.swift */,
+				3FA02E1D1DFCE32B0012ACA0 /* Lv02.swift */,
+				3FA02E031DF9DA050012ACA0 /* Main.storyboard */,
 				3FA02E061DF9DA050012ACA0 /* Assets.xcassets */,
 				3FA02E081DF9DA050012ACA0 /* LaunchScreen.storyboard */,
 				3FA02E0B1DF9DA050012ACA0 /* Info.plist */,
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA02E1E1DFCE32B0012ACA0 /* Lv02.swift in Sources */,
 				3FA02E021DF9DA050012ACA0 /* ViewController.swift in Sources */,
+				3FA02E201DFCE6460012ACA0 /* Level02SpyLabels.swift in Sources */,
 				3FA02E141DFA4F380012ACA0 /* Level01SpyLabels.swift in Sources */,
 				3FA02E121DF9DA9C0012ACA0 /* Lv01.swift in Sources */,
 				3FA02E001DF9DA050012ACA0 /* AppDelegate.swift in Sources */,
@@ -310,6 +318,7 @@
 				3FA02E101DF9DA050012ACA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
