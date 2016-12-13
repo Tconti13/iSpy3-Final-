@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,44 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="LNM-6l-jwF">
+                                <rect key="frame" x="-170" y="-8" width="714" height="675"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="675" id="eNT-IU-lPF"/>
+                                    <constraint firstAttribute="width" constant="714" id="m64-FW-hZo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Tyler Conti Creation  ©2016 all rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bau-5H-PXC">
+                                <rect key="frame" x="3" y="535" width="368" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="DQD-eL-Cc7"/>
+                                    <constraint firstAttribute="height" constant="226" id="eGa-f6-QpI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bau-5H-PXC" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="515" id="6Bv-EO-EkN"/>
+                            <constraint firstItem="Bau-5H-PXC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="3" id="8J8-EJ-c43"/>
+                            <constraint firstAttribute="trailing" secondItem="Bau-5H-PXC" secondAttribute="trailing" constant="4" id="ScI-ok-EMB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="LNM-6l-jwF" secondAttribute="bottom" id="V5R-4W-nOE"/>
+                            <constraint firstAttribute="trailing" secondItem="LNM-6l-jwF" secondAttribute="trailing" constant="-169" id="VVX-Mo-cB0"/>
+                            <constraint firstAttribute="bottom" secondItem="Bau-5H-PXC" secondAttribute="bottom" constant="-94" id="tFY-mU-d1z"/>
+                            <constraint firstItem="LNM-6l-jwF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-170" id="xcL-5g-JRb"/>
+                            <constraint firstItem="LNM-6l-jwF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-8" id="xgG-yC-tQf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch" width="1920" height="1080"/>
+    </resources>
 </document>

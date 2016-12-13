@@ -9,5 +9,5 @@
 import UIKit
 
 class Level02SpyLabels: UILabel {
-var canTap = true
+    var canTap = true
 }

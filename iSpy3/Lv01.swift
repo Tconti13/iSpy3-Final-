@@ -28,7 +28,7 @@ class Lv01: UIViewController {
     @IBOutlet weak var spyOctopus01: Level01SpyLabels!
     @IBOutlet weak var spyPadLock01: Level01SpyLabels!
     @IBOutlet weak var spyChicken01: Level01SpyLabels!
-    var spyArray01 = [Level01SpyLabels]()
+    var spyArray01 = [(Level01SpyLabels, UILabel)]()
     var remaining01 = 6
     var clickable01 = true
     var notClickable01 = false
@@ -36,12 +36,12 @@ class Lv01: UIViewController {
     var canPlay = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        spyArray01.append(spyDeer01)
-        spyArray01.append(spySeagull01)
-        spyArray01.append(spyDuck01)
-        spyArray01.append(spyOctopus01)
-        spyArray01.append(spyPadLock01)
-        spyArray01.append(spyChicken01)
+        spyArray01.append((spyDeer01, deerLevel01))
+        spyArray01.append((spySeagull01, seagullLevel01))
+        spyArray01.append((spyDuck01, duckLevel01))
+        spyArray01.append((spyOctopus01, octopusLevel01))
+        spyArray01.append((spyPadLock01, padLockLevel01))
+        spyArray01.append((spyChicken01, chickenLevel01))
         itemsLeft01.text = "There is 6 object(s) remaining!"
     }
     func checkForWinner(){
@@ -52,7 +52,8 @@ class Lv01: UIViewController {
     }
     func resetGame(){
         for item in spyArray01{
-            item.canTap = true
+            item.0.canTap = true
+            item.1.textColor = UIColor.black
             clickable01 = true
             gameOver = false
             remaining01 = 6
@@ -75,16 +76,17 @@ class Lv01: UIViewController {
             return
         }
         for item in spyArray01{
-            if item.frame.contains(sender.location(in: backgroundLevel01 )){
-                if item.canTap {
+            if item.0.frame.contains(sender.location(in: backgroundLevel01 )){
+                if item.0.canTap {
                     if(clickable01){
                         remaining01 -= 1
                         itemsLeft01.text = "There is \(remaining01) object(s) remaining!"
+                        item.1.textColor = UIColor.green
                         checkForWinner()
                     }
-                    item.canTap = false
+                    item.0.canTap = false
                 }
-                if item.canTap{
+                if item.0.canTap{
                     canPlay = true
                 }
             }
