@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Lv02: UIViewController {
+class Lv02ViewController: UIViewController {
     //Background, View, Items Left Label, and Bar for level 02
     @IBOutlet weak var barLeve02: UIImageView!
     @IBOutlet weak var backgroundLevel02: UIImageView!

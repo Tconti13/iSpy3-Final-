@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lv03-->
+        <!--Lv03 View Controller-->
         <scene sceneID="dQX-gf-bSE">
             <objects>
-                <viewController id="WOy-pM-KEE" customClass="Lv03" customModule="iSpy3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WOy-pM-KEE" customClass="Lv03ViewController" customModule="iSpy3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cha-kq-cuT"/>
                         <viewControllerLayoutGuide type="bottom" id="t5G-nx-ijM"/>
@@ -396,10 +396,10 @@
             </objects>
             <point key="canvasLocation" x="863.20000000000005" y="138.98050974512745"/>
         </scene>
-        <!--Lv02-->
+        <!--Lv02 View Controller-->
         <scene sceneID="GP0-3g-Jgg">
             <objects>
-                <viewController id="39e-Ua-T8S" customClass="Lv02" customModule="iSpy3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="39e-Ua-T8S" customClass="Lv02ViewController" customModule="iSpy3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhF-hj-KMM"/>
                         <viewControllerLayoutGuide type="bottom" id="5ON-kw-Xom"/>

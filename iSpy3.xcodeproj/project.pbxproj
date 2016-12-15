@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F6FFECC1E00971800D7630E /* Lv03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6FFECB1E00971800D7630E /* Lv03.swift */; };
+		3F6FFECC1E00971800D7630E /* Lv03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6FFECB1E00971800D7630E /* Lv03ViewController.swift */; };
 		3FA02E001DF9DA050012ACA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02DFF1DF9DA050012ACA0 /* AppDelegate.swift */; };
 		3FA02E021DF9DA050012ACA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E011DF9DA050012ACA0 /* ViewController.swift */; };
 		3FA02E051DF9DA050012ACA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA02E031DF9DA050012ACA0 /* Main.storyboard */; };
@@ -15,13 +15,13 @@
 		3FA02E0A1DF9DA050012ACA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA02E081DF9DA050012ACA0 /* LaunchScreen.storyboard */; };
 		3FA02E121DF9DA9C0012ACA0 /* Lv01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E111DF9DA9C0012ACA0 /* Lv01ViewController.swift */; };
 		3FA02E141DFA4F380012ACA0 /* Level01SpyLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E131DFA4F370012ACA0 /* Level01SpyLabels.swift */; };
-		3FA02E1E1DFCE32B0012ACA0 /* Lv02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E1D1DFCE32B0012ACA0 /* Lv02.swift */; };
+		3FA02E1E1DFCE32B0012ACA0 /* Lv02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E1D1DFCE32B0012ACA0 /* Lv02ViewController.swift */; };
 		3FA02E201DFCE6460012ACA0 /* Level02SpyLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA02E1F1DFCE6460012ACA0 /* Level02SpyLabels.swift */; };
 		3FFF82861DFE4D270030E7F2 /* Level03SpyLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF82851DFE4D270030E7F2 /* Level03SpyLabels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F6FFECB1E00971800D7630E /* Lv03.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lv03.swift; path = ../Lv03.swift; sourceTree = "<group>"; };
+		3F6FFECB1E00971800D7630E /* Lv03ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lv03ViewController.swift; path = ../Lv03ViewController.swift; sourceTree = "<group>"; };
 		3FA02DFC1DF9DA050012ACA0 /* iSpy3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSpy3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA02DFF1DF9DA050012ACA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA02E011DF9DA050012ACA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +31,7 @@
 		3FA02E0B1DF9DA050012ACA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA02E111DF9DA9C0012ACA0 /* Lv01ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lv01ViewController.swift; sourceTree = "<group>"; };
 		3FA02E131DFA4F370012ACA0 /* Level01SpyLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level01SpyLabels.swift; sourceTree = "<group>"; };
-		3FA02E1D1DFCE32B0012ACA0 /* Lv02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lv02.swift; sourceTree = "<group>"; };
+		3FA02E1D1DFCE32B0012ACA0 /* Lv02ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lv02ViewController.swift; sourceTree = "<group>"; };
 		3FA02E1F1DFCE6460012ACA0 /* Level02SpyLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level02SpyLabels.swift; sourceTree = "<group>"; };
 		3FFF82851DFE4D270030E7F2 /* Level03SpyLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level03SpyLabels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +70,8 @@
 				3FA02E011DF9DA050012ACA0 /* ViewController.swift */,
 				3FA02E111DF9DA9C0012ACA0 /* Lv01ViewController.swift */,
 				3FA02E131DFA4F370012ACA0 /* Level01SpyLabels.swift */,
-				3FA02E1D1DFCE32B0012ACA0 /* Lv02.swift */,
-				3F6FFECB1E00971800D7630E /* Lv03.swift */,
+				3FA02E1D1DFCE32B0012ACA0 /* Lv02ViewController.swift */,
+				3F6FFECB1E00971800D7630E /* Lv03ViewController.swift */,
 				3FA02E1F1DFCE6460012ACA0 /* Level02SpyLabels.swift */,
 				3FFF82851DFE4D270030E7F2 /* Level03SpyLabels.swift */,
 				3FA02E031DF9DA050012ACA0 /* Main.storyboard */,
@@ -155,9 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA02E1E1DFCE32B0012ACA0 /* Lv02.swift in Sources */,
+				3FA02E1E1DFCE32B0012ACA0 /* Lv02ViewController.swift in Sources */,
 				3FA02E021DF9DA050012ACA0 /* ViewController.swift in Sources */,
-				3F6FFECC1E00971800D7630E /* Lv03.swift in Sources */,
+				3F6FFECC1E00971800D7630E /* Lv03ViewController.swift in Sources */,
 				3FFF82861DFE4D270030E7F2 /* Level03SpyLabels.swift in Sources */,
 				3FA02E201DFCE6460012ACA0 /* Level02SpyLabels.swift in Sources */,
 				3FA02E141DFA4F380012ACA0 /* Level01SpyLabels.swift in Sources */,

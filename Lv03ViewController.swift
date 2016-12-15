@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Lv03: UIViewController {
+class Lv03ViewController: UIViewController {
     //
     @IBOutlet weak var level03View: UIView!
     @IBOutlet weak var level03Background: UIImageView!
