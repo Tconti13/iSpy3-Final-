@@ -884,20 +884,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundLevel01" destination="C09-GS-lUt" id="UyT-KP-Gb3"/>
-                        <outlet property="chickenLevel01" destination="ADg-tn-Lee" id="5zy-NZ-a9q"/>
-                        <outlet property="deerLevel01" destination="RGE-gQ-VzT" id="tva-YE-rV4"/>
-                        <outlet property="duckLevel01" destination="PWw-fd-wQm" id="weN-Xb-Jjx"/>
+                        <outlet property="backgroundImageLevel01" destination="C09-GS-lUt" id="6ls-iv-wrk"/>
+                        <outlet property="chickenLabelLevel01" destination="ADg-tn-Lee" id="lMP-HO-WfR"/>
+                        <outlet property="deerLabelLevel01" destination="RGE-gQ-VzT" id="IYa-0C-2ec"/>
+                        <outlet property="duckLabelLevel01" destination="PWw-fd-wQm" id="6aU-oD-tJG"/>
                         <outlet property="itemsLeftLabel01" destination="azM-j4-h4l" id="sQ3-Db-M4B"/>
-                        <outlet property="octopusLevel01" destination="Cw9-Vm-SOu" id="kg4-pO-JtR"/>
-                        <outlet property="padLockLevel01" destination="kK8-sw-hUU" id="23N-Cc-Phn"/>
-                        <outlet property="seagullLevel01" destination="5EO-Xi-2nW" id="k9U-pq-I3m"/>
-                        <outlet property="spyChicken01" destination="BEK-8B-TAc" id="GWN-kB-ct3"/>
-                        <outlet property="spyDeer01" destination="LNv-iz-UeD" id="bJL-PZ-G58"/>
-                        <outlet property="spyDuck01" destination="rj6-v1-uCp" id="yEg-f2-fVg"/>
-                        <outlet property="spyOctopus01" destination="ViB-tR-IhS" id="t6i-eT-qA0"/>
-                        <outlet property="spyPadLock01" destination="tg3-7o-hk7" id="bau-Lh-Ukx"/>
-                        <outlet property="spySeagull01" destination="7dO-7C-qH4" id="pqL-h7-eJB"/>
+                        <outlet property="octopusLabelLevel01" destination="Cw9-Vm-SOu" id="h5p-hq-fw0"/>
+                        <outlet property="padLockLabelLevel01" destination="kK8-sw-hUU" id="8EB-Q6-P1a"/>
+                        <outlet property="seagullLabelLevel01" destination="5EO-Xi-2nW" id="DBZ-fW-kAg"/>
+                        <outlet property="spyLabelChicken01" destination="BEK-8B-TAc" id="PJA-dc-Wms"/>
+                        <outlet property="spyLabelDeer01" destination="LNv-iz-UeD" id="Usn-f9-IL6"/>
+                        <outlet property="spyLabelDuck01" destination="rj6-v1-uCp" id="ozv-H8-frm"/>
+                        <outlet property="spyLabelOctopus01" destination="ViB-tR-IhS" id="C1A-Pz-W37"/>
+                        <outlet property="spyLabelPadLock01" destination="tg3-7o-hk7" id="2Ea-pV-2Iy"/>
+                        <outlet property="spyLabelSeagull01" destination="7dO-7C-qH4" id="eSP-Oe-DbU"/>
                         <outlet property="viewLevel01" destination="XBa-zu-0VT" id="UWL-xt-Dpp"/>
                     </connections>
                 </viewController>

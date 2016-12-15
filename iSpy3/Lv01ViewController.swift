@@ -11,23 +11,24 @@ import UIKit
 class Lv01ViewController: UIViewController {
     
     //View, Items Remaining, & Background
-    @IBOutlet weak var backgroundLevel01: UIImageView!
+    
+    @IBOutlet weak var backgroundImageLevel01: UIImageView!
     @IBOutlet weak var viewLevel01: UIView!
     @IBOutlet weak var itemsLeftLabel01: UILabel!
     //The Item List(Deer, Duck, Seagull, Chicken, Padlock, Octopus)
-    @IBOutlet weak var deerLevel01: UILabel!
-    @IBOutlet weak var seagullLevel01: UILabel!
-    @IBOutlet weak var duckLevel01: UILabel!
-    @IBOutlet weak var octopusLevel01: UILabel!
-    @IBOutlet weak var padLockLevel01: UILabel!
-    @IBOutlet weak var chickenLevel01: UILabel!
+    @IBOutlet weak var deerLabelLevel01: UILabel!
+    @IBOutlet weak var seagullLabelLevel01: UILabel!
+    @IBOutlet weak var duckLabelLevel01: UILabel!
+    @IBOutlet weak var octopusLabelLevel01: UILabel!
+    @IBOutlet weak var padLockLabelLevel01: UILabel!
+    @IBOutlet weak var chickenLabelLevel01: UILabel!
     //The Hidden Objects(Deer, Duck, Seagull, Chicken, Padlock, Octopus)
-    @IBOutlet weak var spyDeer01: Level01SpyLabels!
-    @IBOutlet weak var spySeagull01: Level01SpyLabels!
-    @IBOutlet weak var spyDuck01: Level01SpyLabels!
-    @IBOutlet weak var spyOctopus01: Level01SpyLabels!
-    @IBOutlet weak var spyPadLock01: Level01SpyLabels!
-    @IBOutlet weak var spyChicken01: Level01SpyLabels!
+    @IBOutlet weak var spyLabelDeer01: Level01SpyLabels!
+    @IBOutlet weak var spyLabelSeagull01: Level01SpyLabels!
+    @IBOutlet weak var spyLabelDuck01: Level01SpyLabels!
+    @IBOutlet weak var spyLabelOctopus01: Level01SpyLabels!
+    @IBOutlet weak var spyLabelPadLock01: Level01SpyLabels!
+    @IBOutlet weak var spyLabelChicken01: Level01SpyLabels!
     var spyArray01 = [(Level01SpyLabels, UILabel)]()
     var remaining01 = 6
     var clickable01 = true
@@ -36,12 +37,12 @@ class Lv01ViewController: UIViewController {
     var canPlay = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        spyArray01.append((spyDeer01, deerLevel01))
-        spyArray01.append((spySeagull01, seagullLevel01))
-        spyArray01.append((spyDuck01, duckLevel01))
-        spyArray01.append((spyOctopus01, octopusLevel01))
-        spyArray01.append((spyPadLock01, padLockLevel01))
-        spyArray01.append((spyChicken01, chickenLevel01))
+        spyArray01.append((spyLabelDeer01, deerLabelLevel01))
+        spyArray01.append((spyLabelSeagull01, seagullLabelLevel01))
+        spyArray01.append((spyLabelDuck01, duckLabelLevel01 ))
+        spyArray01.append((spyLabelOctopus01, octopusLabelLevel01))
+        spyArray01.append((spyLabelPadLock01, padLockLabelLevel01))
+        spyArray01.append((spyLabelChicken01, chickenLabelLevel01))
         itemsLeftLabel01.text = "There is 6 object(s) remaining!"
     }
     func checkForWinner(){
@@ -76,7 +77,7 @@ class Lv01ViewController: UIViewController {
             return
         }
         for item in spyArray01{
-            if item.0.frame.contains(sender.location(in: backgroundLevel01 )){
+            if item.0.frame.contains(sender.location(in: backgroundImageLevel01 )){
                 if item.0.canTap {
                     if(clickable01){
                         remaining01 -= 1
