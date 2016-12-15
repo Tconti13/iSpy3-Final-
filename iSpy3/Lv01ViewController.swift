@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Lv01: UIViewController {
+class Lv01ViewController: UIViewController {
     
     //View, Items Remaining, & Background
     @IBOutlet weak var backgroundLevel01: UIImageView!
