@@ -13,7 +13,7 @@ class Lv01ViewController: UIViewController {
     //View, Items Remaining, & Background
     @IBOutlet weak var backgroundLevel01: UIImageView!
     @IBOutlet weak var viewLevel01: UIView!
-    @IBOutlet weak var itemsLeft01: UILabel!
+    @IBOutlet weak var itemsLeftLabel01: UILabel!
     //The Item List(Deer, Duck, Seagull, Chicken, Padlock, Octopus)
     @IBOutlet weak var deerLevel01: UILabel!
     @IBOutlet weak var seagullLevel01: UILabel!
@@ -42,7 +42,7 @@ class Lv01ViewController: UIViewController {
         spyArray01.append((spyOctopus01, octopusLevel01))
         spyArray01.append((spyPadLock01, padLockLevel01))
         spyArray01.append((spyChicken01, chickenLevel01))
-        itemsLeft01.text = "There is 6 object(s) remaining!"
+        itemsLeftLabel01.text = "There is 6 object(s) remaining!"
     }
     func checkForWinner(){
         if remaining01 == 0{
@@ -60,11 +60,11 @@ class Lv01ViewController: UIViewController {
         }
     }
     func displayWinningMessage(message: String){
-        self.itemsLeft01.text = "Game Over"
+        self.itemsLeftLabel01.text = "Game Over"
         let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Reset", style: .default) {
             (action) -> Void in self.resetGame()
-            self.itemsLeft01.text = "There is 6 object(s) remaining!"
+            self.itemsLeftLabel01.text = "There is 6 object(s) remaining!"
         }
         alert.addAction(alertAction)
         present(alert, animated: true, completion: nil)
@@ -80,7 +80,7 @@ class Lv01ViewController: UIViewController {
                 if item.0.canTap {
                     if(clickable01){
                         remaining01 -= 1
-                        itemsLeft01.text = "There is \(remaining01) object(s) remaining!"
+                        itemsLeftLabel01.text = "There is \(remaining01) object(s) remaining!"
                         item.1.textColor = UIColor.green
                         checkForWinner()
                     }

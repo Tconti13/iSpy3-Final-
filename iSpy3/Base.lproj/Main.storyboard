@@ -888,7 +888,7 @@
                         <outlet property="chickenLevel01" destination="ADg-tn-Lee" id="5zy-NZ-a9q"/>
                         <outlet property="deerLevel01" destination="RGE-gQ-VzT" id="tva-YE-rV4"/>
                         <outlet property="duckLevel01" destination="PWw-fd-wQm" id="weN-Xb-Jjx"/>
-                        <outlet property="itemsLeft01" destination="azM-j4-h4l" id="OyA-yB-Yeu"/>
+                        <outlet property="itemsLeftLabel01" destination="azM-j4-h4l" id="sQ3-Db-M4B"/>
                         <outlet property="octopusLevel01" destination="Cw9-Vm-SOu" id="kg4-pO-JtR"/>
                         <outlet property="padLockLevel01" destination="kK8-sw-hUU" id="23N-Cc-Phn"/>
                         <outlet property="seagullLevel01" destination="5EO-Xi-2nW" id="k9U-pq-I3m"/>
