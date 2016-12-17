@@ -502,7 +502,7 @@
                                     <constraint firstAttribute="width" constant="61" id="Pbl-1Q-mHs"/>
                                     <constraint firstAttribute="height" constant="21" id="cY1-tp-fSg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -522,17 +522,17 @@
                                     <constraint firstAttribute="height" constant="21" id="GTs-um-6rC"/>
                                     <constraint firstAttribute="width" constant="89" id="avW-nz-1d4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barrel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-v7-vPv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow Barrel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-v7-vPv">
                                 <rect key="frame" x="279" y="611" width="80" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="H5b-pf-gRw"/>
                                     <constraint firstAttribute="height" constant="21" id="zEt-ov-Qbr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -542,7 +542,7 @@
                                     <constraint firstAttribute="height" constant="21" id="8ha-Hr-s3t"/>
                                     <constraint firstAttribute="width" constant="61" id="z5Q-Xh-8NV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -552,7 +552,7 @@
                                     <constraint firstAttribute="width" constant="89" id="PNc-Nj-2xM"/>
                                     <constraint firstAttribute="height" constant="21" id="YBC-zD-YQY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -562,7 +562,7 @@
                                     <constraint firstAttribute="width" constant="83" id="y1v-iF-vyw"/>
                                     <constraint firstAttribute="height" constant="21" id="yDi-Ad-OLu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -892,11 +892,11 @@
                         <outlet property="octopusLabelLevel01" destination="Cw9-Vm-SOu" id="h5p-hq-fw0"/>
                         <outlet property="padLockLabelLevel01" destination="kK8-sw-hUU" id="8EB-Q6-P1a"/>
                         <outlet property="seagullLabelLevel01" destination="5EO-Xi-2nW" id="DBZ-fW-kAg"/>
-                        <outlet property="spyLabelChicken01" destination="BEK-8B-TAc" id="PJA-dc-Wms"/>
+                        <outlet property="spyLabelChicken01" destination="BEK-8B-TAc" id="h5q-2i-rl7"/>
                         <outlet property="spyLabelDeer01" destination="LNv-iz-UeD" id="Usn-f9-IL6"/>
                         <outlet property="spyLabelDuck01" destination="rj6-v1-uCp" id="ozv-H8-frm"/>
                         <outlet property="spyLabelOctopus01" destination="ViB-tR-IhS" id="C1A-Pz-W37"/>
-                        <outlet property="spyLabelPadLock01" destination="tg3-7o-hk7" id="2Ea-pV-2Iy"/>
+                        <outlet property="spyLabelPadLock01" destination="tg3-7o-hk7" id="PIP-vi-jQY"/>
                         <outlet property="spyLabelSeagull01" destination="7dO-7C-qH4" id="eSP-Oe-DbU"/>
                         <outlet property="viewLevel01" destination="XBa-zu-0VT" id="UWL-xt-Dpp"/>
                     </connections>

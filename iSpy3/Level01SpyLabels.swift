@@ -8,5 +8,7 @@
 
 import UIKit
 class Level01SpyLabels: UILabel {
+    
+    //canTap checks if the hidden object can be tapped
     var canTap = true
 }
